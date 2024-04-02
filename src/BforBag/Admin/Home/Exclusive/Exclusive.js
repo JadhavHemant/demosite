@@ -3,7 +3,7 @@ import exclu from '../images/exclusive.png';
 const Exclusive = () => {
     return (
         <>
-            <div className='w-max-auto'>
+            <div className='pt-[50px]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 rounded-lg bg-gradient-to-r from-yellow-200 via-green-200 to-green-500 font-[Poppins]'>
                     <div className='md:grid-flow-row p-8'>
                         <img src={exclu} alt='imaged' />
