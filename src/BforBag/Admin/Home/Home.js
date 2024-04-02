@@ -1,7 +1,8 @@
 import React from 'react'
-import logo from '../Images/image1.png'
+import logo from './images/image1.png'
 import FeaturedProducts from './FeaturedProducts/FeaturedProducts'
 import LatestProducts from './Latest Products/LatestProducts'
+import Exclusive from './Exclusive/Exclusive'
 const Home = () => {
     const Explore = () => {
         alert('Explore ')
@@ -17,19 +18,16 @@ const Home = () => {
                             <button className='bg-[orange] w-[170px] hover:bg-[rgba(250,224,80,0.95)]  p-2 border border-black rounded-[20px]' onClick={() => Explore()}>Explore Now &#8594;</button>
                         </div>
                     </div>
-                    <div className='md:grid-flow-row'>
-                        <div className=''>
-                            <div className='md:grid-flow-row p-4'>
-                                <div>
-                                    <img src={logo} className=' ' />
-                                </div>
-                            </div>
+                    <div className='md:grid-flow-row p-4'>
+                        <div>
+                            <img src={logo} className=' ' />
                         </div>
                     </div>
                 </div>
                 <div className='p-4'>
                     <FeaturedProducts />
-                    <LatestProducts/>
+                    <LatestProducts />
+                    <Exclusive />
                 </div>
             </div>
         </>
