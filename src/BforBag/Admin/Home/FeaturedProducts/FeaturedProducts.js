@@ -6,7 +6,7 @@ import Product3 from '../images/category-3.jpg'
 const FeaturedProducts = () => {
     return (
         <>
-            <div className='text-[30px] text-center font-bold p-4'>
+            <div className='text-[30px] text-center font-bold p-4 '>
                 Comming Soon
                 <hr class="mx-auto w-40 h-2 bg-orange-500 border rounded-xl " />
             </div>

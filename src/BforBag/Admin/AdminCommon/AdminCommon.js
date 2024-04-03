@@ -26,12 +26,12 @@ const UserCommon = () => {
               <div className="flex items-center justify-between my-2 lg:justify-end gap-[40px]">
                 <Link to="/">
                   <div className="pl-4">
-                    <img src={logo} alt="Logo" className="h-[40px] w-[180px]" />
+                    <img src={logo} alt="Logo" className="h-[50px] w-[180px]" />
                   </div>
                 </Link>
               </div>
               <div className="flex gap-6 font-bold">
-                <div className="hidden lg:flex gap-10 items-center justify-between my-2 pr-4">
+                <div className="hidden lg:flex gap-10 items-center justify-between my-2 pr-4 lg:text-[16px]">
                   <Link to="" onClick={handleLinkClick}>Home</Link>
                   <Link to="" onClick={handleLinkClick}>about</Link>
                   <Link to="" onClick={handleLinkClick}>product</Link>

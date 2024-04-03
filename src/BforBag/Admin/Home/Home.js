@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <div className='h-auto pb-[50px]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 bg-gradient-to-r from-yellow-200 via-green-200 to-green-500 font-[Poppins]'>
-                    <div className='md:grid-flow-row p-6 pt-[200px] '>
+                    <div className='md:grid-flow-row p-6 lg:pt-[200px] '>
                         <h1 className='text-[40px]  text-transparent bg-clip-text bg-[black] font-bold lg:text-[60px] '>Best Sellers<br /></h1>
                         <p className='pt-3  lg:text-[20px] font-bold'>Shop American Tourister's best-sellers online. Discover the most<br /> popular, top-rated travel gear handpicked by American Tourister fans!.</p>
                      <div className='pt-4 lg:pt-8'>
@@ -22,7 +22,7 @@ const Home = () => {
                     </div>
                     <div className='md:grid-flow-row p-4'>
                         <div>
-                            <img src={logo} className=' ' />
+                            <img src={logo} className='' />
                         </div>
                     </div>
                 </div>
