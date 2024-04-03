@@ -26,7 +26,7 @@ const UserCommon = () => {
               <div className="flex items-center justify-between my-2 lg:justify-end gap-[40px]">
                 <Link to="/">
                   <div className="pl-4">
-                  <img src={logo} alt="Logo" className="h-[40px] w-[180px]" />
+                    <img src={logo} alt="Logo" className="h-[40px] w-[180px]" />
                   </div>
                 </Link>
               </div>
@@ -63,8 +63,9 @@ const UserCommon = () => {
 
         </div>
       </header>
-
-      <Outlet />
+      <div onClick={handleLinkClick}>
+        <Outlet />
+      </div>
     </>
   )
 }
