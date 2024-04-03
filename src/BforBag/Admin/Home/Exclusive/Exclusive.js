@@ -4,7 +4,7 @@ const Exclusive = () => {
     return (
         <>
             <div className='pt-[50px]'>
-                <div className='grid grid-cols-1 md:grid-cols-2 rounded-lg bg-gradient-to-r from-yellow-200 via-green-200 to-green-500 font-[Poppins]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 rounded-[30px] bg-gradient-to-r from-yellow-200 via-green-200 to-green-500 font-[Poppins]'>
                     <div className='md:grid-flow-row p-8'>
                         <img src={exclu} alt='imaged' />
                     </div>
