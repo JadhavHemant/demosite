@@ -34,10 +34,7 @@ const UserCommon = () => {
               <div className="flex gap-6 font-bold">
                 <div className="hidden lg:flex gap-10 items-center justify-between my-2 pr-4 lg:text-[16px]">
                   <Link to="" onClick={handleLinkClick}>Home</Link>
-                  <Link to="" onClick={handleLinkClick}>about</Link>
-                  <Link to="" onClick={handleLinkClick}>product</Link>
-                  <Link to="" onClick={handleLinkClick}>account</Link>
-                  <Link to="" onClick={handleLinkClick}>cart</Link>
+                  <Link to="products" onClick={handleLinkClick}>product</Link>
                 </div>
                 <div className="flex items-center lg:hidden">
                   <button onClick={handleToggleMenu}>

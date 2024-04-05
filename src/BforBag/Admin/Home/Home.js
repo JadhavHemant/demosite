@@ -3,7 +3,6 @@ import logo from './images/image1.png'
 import FeaturedProducts from './FeaturedProducts/FeaturedProducts'
 import LatestProducts from './Latest Products/LatestProducts'
 import Exclusive from './Exclusive/Exclusive'
-import Products from '../Products/Products'
 const Home = () => {
     const Explore = () => {
         alert('Explore ')
@@ -28,14 +27,11 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='p-4'>
-                    <FeaturedProducts />
+                    <FeaturedProducts/>
                     <LatestProducts />
                 </div>
                 <div>
                     <Exclusive />
-                </div>
-                <div>
-                    <Products/>
                 </div>
             </div>
         </>

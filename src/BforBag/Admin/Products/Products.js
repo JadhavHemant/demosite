@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import productsData from './Products.json';
-import imgdata from './images/product-1.jpg'
+import imgdata from './images/product-1.jpg';
+import SubCate from './SubCate/SubCate';
 const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 16;
@@ -13,12 +14,12 @@ const Products = () => {
 
   return (
     <>
-      <div>
-        <h1>Product</h1>
+      <div >
+       <SubCate/>
       </div>
       {/*  */}
-      <div className='p-4'>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-5  max-w-auto lg:p-[50px] '>
+      <div className=''>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-7  max-w-auto lg:p-[50px] '>
           {
             currentProducts.map((d, k) => (
               <div className='md:grid-flow-row border border-black bg-white'>
@@ -39,7 +40,7 @@ const Products = () => {
       </div>
 
       {/*  */}
-      <div className='flex justify-center'>
+      <div className='flex justify-center pb-4'>
         <button
           className={`bg-[orange] p-2 mr-2 h-[40px] w-[40px] hover:bg-[#53f4ff] ${currentPage === 1 ? 'cursor-not-allowed opacity-50' : ''}`}
           onClick={() => paginate(currentPage - 1)}
@@ -63,13 +64,7 @@ const Products = () => {
           return null;
         })}
 
-        <button
-          className={`bg-[orange] p-2 mr-2 h-[40px] w-[40px] hover:bg-[#53f4ff] ${currentPage === Math.ceil(productsData.length / productsPerPage) ? 'cursor-not-allowed opacity-50' : ''}`}
-          onClick={() => paginate(currentPage + 1)}
-          disabled={currentPage === Math.ceil(productsData.length / productsPerPage)}
-        >
-          &gt;
-        </button>
+        <button className={`bg-[orange] p-2 mr-2 h-[40px] w-[40px] hover:bg-[#53f4ff] ${currentPage === Math.ceil(productsData.length / productsPerPage) ? 'cursor-not-allowed opacity-50' : ''}`} onClick={() => paginate(currentPage + 1)}disabled={currentPage === Math.ceil(productsData.length / productsPerPage)}>&gt;</button>
       </div>
 
 
