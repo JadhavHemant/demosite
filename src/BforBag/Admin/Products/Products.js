@@ -18,7 +18,7 @@ const Products = () => {
        <SubCate/>
       </div>
       {/*  */}
-      <div className=''>
+      <div className='md:p-4 lg:p-3  p-4'>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-7  max-w-auto lg:p-[50px] '>
           {
             currentProducts.map((d, k) => (

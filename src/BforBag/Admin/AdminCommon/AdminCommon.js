@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, Outlet } from 'react-router-dom';
-import logo from '../AdminCommon/logo.png';
+// import logo from '../AdminCommon/logo.png';
+
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Footer from "../Footer/Footer";
 
@@ -27,7 +28,7 @@ const UserCommon = () => {
               <div className="flex items-center justify-between my-2 lg:justify-end gap-[40px]">
                 <Link to="/">
                   <div className="pl-4">
-                    <img src={logo} alt="Logo" className="h-[50px] w-[180px]" />
+                    {/* <img src={logo} alt="Logo" className="h-[50px] w-[180px]" /> */}
                   </div>
                 </Link>
               </div>

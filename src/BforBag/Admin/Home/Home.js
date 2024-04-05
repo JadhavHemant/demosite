@@ -9,7 +9,7 @@ const Home = () => {
     }
     return (
         <>
-            <div className='h-auto pb-[50px]'>
+            <div className='h-auto '>
                 <div className='grid grid-cols-1 md:grid-cols-2 bg-gradient-to-r from-yellow-200 via-green-200 to-green-500 font-[Poppins]'>
                     <div className='md:grid-flow-row p-6 lg:pt-[200px] '>
                         <h1 className='text-[40px]  text-transparent bg-clip-text bg-[black] font-bold lg:text-[60px] '>Best Sellers<br /></h1>
