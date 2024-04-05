@@ -39,13 +39,39 @@ const Products = () => {
       </div>
 
       {/*  */}
-      <div>
-        {Array.from({ length: Math.ceil(productsData.length / productsPerPage) }, (_, i) => (
-          <button key={i} onClick={() => paginate(i + 1)} className='bg-[orange] p-2 mr-2'>
-            {i + 1}
-          </button>
-        ))}
+      <div className='flex justify-center'>
+        <button
+          className={`bg-[orange] p-2 mr-2 h-[40px] w-[40px] hover:bg-[#53f4ff] ${currentPage === 1 ? 'cursor-not-allowed opacity-50' : ''}`}
+          onClick={() => paginate(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          &lt;
+        </button>
+
+        {Array.from({ length: Math.ceil(productsData.length / productsPerPage) }, (_, i) => {
+          if (i === currentPage - 1 || i === currentPage - 2 || i === currentPage || i === currentPage + 1 || i === currentPage + 2) {
+            return (
+              <button key={i} onClick={() => paginate(i + 1)} className={`bg-[orange] p-2 mr-2 h-[40px] w-[40px] hover:bg-[#53f4ff] ${i + 1 === currentPage ? 'bg-[#53f4ff]' : ''}`}>
+                {i + 1}
+              </button>
+            );
+          } else if (i === currentPage - 3 || i === currentPage + 3) {
+            return (
+              <span key={i}></span>
+            );
+          }
+          return null;
+        })}
+
+        <button
+          className={`bg-[orange] p-2 mr-2 h-[40px] w-[40px] hover:bg-[#53f4ff] ${currentPage === Math.ceil(productsData.length / productsPerPage) ? 'cursor-not-allowed opacity-50' : ''}`}
+          onClick={() => paginate(currentPage + 1)}
+          disabled={currentPage === Math.ceil(productsData.length / productsPerPage)}
+        >
+          &gt;
+        </button>
       </div>
+
 
     </>
   );
