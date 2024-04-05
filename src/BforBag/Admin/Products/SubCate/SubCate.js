@@ -1,6 +1,6 @@
 import React from 'react'
 import Cate from './Cate.json'
-import Cateimg from './cart.png';
+import Cateimg from './user-1.png';
 const SubCate = () => {
     console.log(Cate);
 

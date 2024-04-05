@@ -47,11 +47,8 @@ const UserCommon = () => {
           <div className={`fixed z-40 w-full backdrop-blur-sm overflow-hidden flex flex-col lg:hidden gap-12 ${toggleMenu ? "h-auto" : "h-0"}`}>
             <div className="px-8 text-center">
               <div className="flex flex-col gap-8 font-bold overflow-visible tracking-wider pt-4 pb-4">
-                <Link to="" onClick={handleLinkClick}>Home</Link>
-                <Link to="" onClick={handleLinkClick}>about</Link>
-                <Link to="" onClick={handleLinkClick}>product</Link>
-                <Link to="" onClick={handleLinkClick}>account</Link>
-                <Link to="" onClick={handleLinkClick}>cart</Link>
+              <Link to="" onClick={handleLinkClick}>Home</Link>
+                  <Link to="products" onClick={handleLinkClick}>product</Link>
               </div>
             </div>
           </div>
