@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, Outlet } from 'react-router-dom';
 import logo from '../AdminCommon/logo.png';
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import Footer from "../Footer/Footer";
 
 const UserCommon = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -65,6 +66,9 @@ const UserCommon = () => {
       </header>
       <div onClick={handleLinkClick}>
         <Outlet />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   )

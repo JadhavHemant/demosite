@@ -16,7 +16,6 @@ const LatestProducts = () => {
                 <hr class="mx-auto w-40 h-2 bg-orange-500 border rounded-xl " />
             </div>
             <div className='grid grid-cols-1 md:grid-cols-4 gap-5  max-w-auto lg:p-[50px] '>
-
                 <div className='md:grid-flow-row border border-black bg-white'>
                     <div className='flex justify-center'>
                         <img src={Product1} />
